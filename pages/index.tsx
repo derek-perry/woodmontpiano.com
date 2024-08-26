@@ -19,7 +19,7 @@ const HomePage: NextPage = () => {
           <p className="mt-28 max-sm:mt-16 mb-4 text-2xl text-justify">Woodmont Piano Studio is your go-to spot for piano lessons in Pleasant Ridge! With over 15 years of piano teaching experience, I’m dedicated to helping students of all ages achieve their musical goals, whether it's mastering classical compositions, performing confidently in public, acing adjudications, or simply playing their favorite songs for fun. My lessons in Cincinnati offer a unique blend of classical and popular music expertise, ensuring a well-rounded and enjoyable learning experience. With two exciting recitals each year and a track record of success in festivals, I’m here to guide you every step of the way. Join me in Pleasant Ridge and let’s make your piano dreams come true!</p>
 
           <div className="mt-32 flex max-lg:flex-col flex-row gap-x-10 gap-y-4 items-top px-6 py-8 bg-[#f3f3f3] shadow-md">
-            <div className="flex flex-row flex-wrap text-left justify-center align-middle max-lg:items-center items-top gap-x-10 gap-y-6">
+            <div className="flex flex-row flex-wrap text-left justify-center align-middle max-lg:items-center items-top gap-x-10 gap-y-6 w-auto">
               <Image src={SiteURL + "/william-perry.png"} alt="" width={300} height={300} className="mt-2 max-w-[300px] max-h-[300px] max-[400px]:max-w-[200px] max-[400px]:max-h-[200px]" />
               <h2 id="william-perry" className="lg:hidden text-4xl font-bold">Meet <br />William Perry</h2>
             </div>
@@ -30,48 +30,76 @@ const HomePage: NextPage = () => {
             </div>
           </div>
 
-          <div className="mt-32 flex flex-row max-md:flex-col gap-10 items-top">
-            <div className="flex flex-col basis-2/4 gap-4 px-6 py-8 bg-[#f3f3f3] shadow-md">
-              <Image src={SiteURL + "/any-style.png"} alt="" width={300} height={300} />
-              <h2 id="learn-any-style" className="text-4xl font-bold">Learn any style</h2>
-              <p className="text-2xl text-justify">I don't just teach classical music, in addition to being a pianist, I also play electronic keyboards and pipe organ! I have a wide range of experience performing and teaching any style of music. You can learn the standard classical repertoire or learn how to play your favorite classic rock songs.</p>
+          <div className="mt-40 flex flex-row max-[1485px]:flex-col gap-10 items-top">
+            <div className="flex max-lg:flex-col flex-row gap-x-10 gap-y-4 items-top px-6 py-8 bg-[#f3f3f3] shadow-md basis-2/4 max-[1485px]:items-center">
+              <div className="flex flex-row flex-wrap text-left justify-center align-middle max-lg:items-center items-top gap-x-10 gap-y-6 w-auto">
+                <Image src={SiteURL + "/any-style.png"} alt="" width={300} height={300} className="mt-2 max-w-[300px] max-h-[300px] max-[400px]:max-w-[200px] max-[400px]:max-h-[200px]" />
+                <h2 id="learn-any-style" className="lg:hidden text-4xl font-bold">Learn any style</h2>
+              </div>
+              <div className="flex flex-col">
+                <h2 id="learn-any-style" className="max-lg:hidden text-4xl font-bold">Learn any style</h2>
+                <p className="my-2 text-2xl text-justify">I don't just teach classical music, in addition to being a pianist, I also play electronic keyboards and pipe organ! I have a wide range of experience performing and teaching any style of music. You can learn the standard classical repertoire or learn how to play your favorite classic rock songs.</p>
+              </div>
             </div>
 
-            <div className="flex flex-col basis-2/4 gap-4 px-6 py-8 bg-[#f3f3f3] shadow-md">
-              <Image src={SiteURL + "/all-ages.png"} alt="" width={300} height={300} />
-              <h2 id="for-all-ages" className="text-4xl font-bold">For all ages</h2>
-              <p className="text-2xl text-justify">I teach children and adults alike and love working with both. I typically maintain a studio of about half children and half adults.</p>
+            <div className="flex max-lg:flex-col flex-row gap-x-10 gap-y-4 items-top px-6 py-8 bg-[#f3f3f3] shadow-md basis-2/4 max-[1485px]:items-center">
+              <div className="flex flex-row flex-wrap max-[705px]:flex-col text-left justify-center align-middle max-lg:items-center items-top gap-x-10 gap-y-6 w-auto">
+                <Image src={SiteURL + "/all-ages.png"} alt="" width={300} height={300} className="mt-2 max-w-[300px] max-h-[300px] max-[400px]:max-w-[200px] max-[400px]:max-h-[200px]" />
+                <h2 id="for-all-ages" className="lg:hidden text-4xl font-bold">For all ages</h2>
+              </div>
+              <div className="flex flex-col">
+                <h2 id="for-all-ages" className="max-lg:hidden text-4xl font-bold">For all ages</h2>
+                <p className="my-2 text-2xl text-justify">I teach children and adults alike and love working with both. I typically maintain a studio of about half children and half adults.</p>
+              </div>
             </div>
           </div>
 
-          <div className="mt-32 flex flex-row max-lg:flex-col gap-10 items-top">
-            <div className="flex flex-col px-6 py-8 bg-[#f3f3f3] shadow-md">
-              <h2 id="customized-lesson-plans" className="text-4xl font-bold">Customized Lesson Plans</h2>
-              <p className="my-4 text-2xl text-justify">Every lesson plan takes into consideration your goals and helps you learn how to practice to achieve success.</p>
+          <div className="mt-10 flex flex-row max-[1485px]:flex-col gap-10 items-top">
+            <div className="flex max-lg:flex-col flex-row gap-x-10 gap-y-4 items-top px-6 py-8 bg-[#f3f3f3] shadow-md basis-2/6 items-center">
+              <div className="flex flex-row flex-wrap max-[705px]:flex-col text-left justify-center align-middle max-lg:items-center items-top gap-x-10 gap-y-6 w-auto">
+                <Image src={SiteURL + "/icon_planning.svg"} alt="" width={100} height={100} className="mt-2 max-w-[300px] max-h-[300px] max-[400px]:max-w-[200px] max-[400px]:max-h-[200px]" />
+                <h2 id="custom-lesson-plans" className="lg:hidden text-4xl font-bold text-center">Custom Lesson Plans</h2>
+              </div>
+              <div className="flex flex-col">
+                <h2 id="custom-lesson-plans" className="max-lg:hidden text-4xl font-bold">Custom Lesson Plans</h2>
+                <p className="my-2 text-2xl text-justify">Every lesson plan takes into consideration your goals and helps you learn how to practice to achieve success.</p>
+              </div>
             </div>
 
-            <div className="flex flex-col px-6 py-8 bg-[#f3f3f3] shadow-md">
-              <h2 id="recitals" className="text-4xl font-bold">Participate in Recitals</h2>
-              <p className="my-4 text-2xl text-justify">Optionally participate in two  themed recitals per year where you can showcase your talents and be inspired by other students!</p>
+            <div className="flex max-lg:flex-col flex-row gap-x-10 gap-y-4 items-top px-6 py-8 bg-[#f3f3f3] shadow-md basis-2/6 items-center">
+              <div className="flex flex-row flex-wrap max-[705px]:flex-col text-left justify-center align-middle max-lg:items-center items-top gap-x-10 gap-y-6 w-auto">
+                <Image src={SiteURL + "/icon_theater.svg"} alt="" width={100} height={100} className="mt-2 max-w-[300px] max-h-[300px] max-[400px]:max-w-[200px] max-[400px]:max-h-[200px]" />
+                <h2 id="recital-participation" className="lg:hidden text-4xl font-bold text-center">Recital Participation</h2>
+              </div>
+              <div className="flex flex-col">
+                <h2 id="recital-participation" className="max-lg:hidden text-4xl font-bold">Recital Participation</h2>
+                <p className="my-2 text-2xl text-justify">You can participate in two themed recitals per year to showcase your talents and be inspired by other students!</p>
+              </div>
             </div>
 
-            <div className="flex flex-col px-6 py-8 bg-[#f3f3f3] shadow-md">
-              <h2 id="prepare-for-exams" className="text-4xl font-bold">Prepare for Exams</h2>
-              <p className="my-4 text-2xl text-justify">I can help you prepare for Royal Conservatory of Music exams, local competitions, and college auditions.</p>
+            <div className="flex max-lg:flex-col flex-row gap-x-10 gap-y-4 items-top px-6 py-8 bg-[#f3f3f3] shadow-md basis-2/6 items-center">
+              <div className="flex flex-row flex-wrap max-[705px]:flex-col text-left justify-center align-middle max-lg:items-center items-top gap-x-10 gap-y-6 w-auto">
+                <Image src={SiteURL + "/icon_exam.svg"} alt="" width={100} height={100} className="mt-2 max-w-[300px] max-h-[300px] max-[400px]:max-w-[200px] max-[400px]:max-h-[200px]" />
+                <h2 id="exam-preparation" className="lg:hidden text-4xl font-bold text-center">Exam Preparation</h2>
+              </div>
+              <div className="flex flex-col">
+                <h2 id="exam-preparation" className="max-lg:hidden text-4xl font-bold">Exam Preparation</h2>
+                <p className="my-2 text-2xl text-justify">Get prepared and practice properly for Royal Conservatory of Music exams, local competitions, and college auditions.</p>
+              </div>
             </div>
           </div>
 
           <div className="flex flex-col text-left lg:text-center">
-            <h2 id="ready-to-start" className="mt-32 text-4xl font-bold">Ready to Start?</h2>
+            <h2 id="ready-to-start" className="mt-40 text-4xl font-bold">Ready to Start?</h2>
             <p className="my-4 text-2xl text-justify lg:text-center">Are you ready to begin piano lessons at Woodmont Piano Studio?</p>
             <div className="mt-4 mb-8 px-6 max-[460px]:px-2 py-8 bg-[#f3f3f3] shadow-md flex flex-col justify-center items-center align-middle text-center w-auto m-0 lg:m-auto">
-              <p className="text-2xl">Send William Perry an email</p>
+              <p className="text-2xl">Email William Perry</p>
               <LinkExternal className="text-2xl max-[460px]:text-xl max-[370px]:text-lg max-[340px]:break-all" href="mailto:contact@woodmontpiano.com" title="Email William Perry at Contact@WoodmontPiano.com">Contact@WoodmontPiano.com</LinkExternal>
             </div>
           </div>
 
           <div className="flex flex-col text-left lg:text-center">
-            <h2 id="ready-to-start" className="mt-32 text-4xl font-bold">Already a Student?</h2>
+            <h2 id="ready-to-start" className="mt-40 text-4xl font-bold">Already a Student?</h2>
             <p className="my-4 text-2xl text-justify lg:text-center">Looking for the login to see your Woodmont Piano Studio account?</p>
             <div className="flex flex-row flex-wrap mt-4 mb-12 lg:text-center lg:items-center lg:justify-center lg:align-middle"><LinkExternalButton href="https://www.woodmontpiano.com/login" target="_self" title="Log in at www.woodmontpiano.com/login">Login</LinkExternalButton></div>
           </div>
