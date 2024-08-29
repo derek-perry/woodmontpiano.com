@@ -101,7 +101,7 @@ const HomePage: NextPage = () => {
           <div className="flex flex-col text-left lg:text-center">
             <h2 id="ready-to-start" className="mt-40 text-4xl font-bold">Already a Student?</h2>
             <p className="my-4 text-2xl text-justify lg:text-center">Looking for the login to see your Woodmont Piano Studio account?</p>
-            <div className="flex flex-row flex-wrap mt-4 mb-12 lg:text-center lg:items-center lg:justify-center lg:align-middle"><LinkExternalButton href="https://www.woodmontpiano.com/login" target="_self" title="Log in at www.woodmontpiano.com/login">Login</LinkExternalButton></div>
+            <div className="flex flex-row flex-wrap mt-4 mb-12 lg:text-center lg:items-center lg:justify-center lg:align-middle"><LinkExternalButton href="https://woodmontpiano.com/login" target="_self" title="Log in at WoodmontPiano.com/login">Login</LinkExternalButton></div>
           </div>
         </div >
       </main >

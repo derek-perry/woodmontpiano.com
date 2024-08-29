@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import LinkInternal from '../Links/LinkInternal';
 
 const Hero = (): JSX.Element => {
   const SiteURL = process.env.NEXT_PUBLIC_SITE_URL || ".";
@@ -12,8 +11,6 @@ const Hero = (): JSX.Element => {
             <Image src={SiteURL + "/logo.svg"} alt="Woodmont Piano Studio Logo" width={100} height={100} />
             <h1><strong>Woodmont <br />Piano Studio</strong></h1>
             <div className="text-3xl max-sm:text-xl flex flex-col"><p>Piano Lessons for All Ages in</p> <p>Pleasant Ridge</p></div>
-            <LinkInternal href="" title="Woodmont Piano Studio" className="no-underline">
-            </LinkInternal>
           </div>
         </div>
       </div>

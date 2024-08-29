@@ -30,7 +30,7 @@ const nextConfig = {
       },
       {
         "source": "/login",
-        "destination": "https://www.woodmontpiano.com/login",
+        "destination": "https://studio.woodmontpiano.com/login",
         "permanent": true
       },
       {
