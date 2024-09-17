@@ -34,6 +34,16 @@ const nextConfig = {
         "permanent": true
       },
       {
+        "source": "/log-in",
+        "destination": "https://studio.woodmontpiano.com/login",
+        "permanent": true
+      },
+      {
+        "source": "/studio",
+        "destination": "https://studio.woodmontpiano.com/login",
+        "permanent": true
+      },
+      {
         "source": "/privacypolicy",
         "destination": "/privacy",
         "permanent": true
